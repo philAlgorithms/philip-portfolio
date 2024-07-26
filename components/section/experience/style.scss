@@ -1,0 +1,14 @@
+.projects::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.projects {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-border {
+  border-top-width: 0px !important;
+  border-bottom-width: 0px !important;
+}
