@@ -1,5 +1,4 @@
 'use client';
-import DownloadCV from '@/components/general/download-cv';
 import IconButton from '@/components/general/icon-button';
 import ThemeSwitcher from '@/components/general/theme-switcher';
 import Typography from '@/components/general/typography';
@@ -63,17 +62,17 @@ const Header: React.FC<IHeader> = ({ className, children, ...headerProps }) => {
           <Logo />
         </Link>
         <div className="hidden items-center gap-6 md:flex">
-          {/* <ul className="flex list-none items-center gap-6">
+          <ul className="flex list-none items-center gap-6">
             {NAV_LINKS.map((link, index) => (
               <li key={index}>
                 <Link href={link.href}>{link.label}</Link>
               </li>
             ))}
-          </ul> */}
+          </ul>
           <div className="h-6 w-0.5 bg-gray-100"></div>
           <div className="flex items-center gap-4">
             <ThemeSwitcher />
-            <DownloadCV />
+            {/* <DownloadCV /> */}
           </div>
         </div>
 

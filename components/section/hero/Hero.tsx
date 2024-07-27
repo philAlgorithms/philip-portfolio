@@ -1,10 +1,8 @@
 'use client';
 import Typography from '@/components/general/typography';
 import SanityImageWithFallback from '@/components/image/fallback/SanityImageWithfallback';
-import SocialIcons from '@/components/image/icon/social/SocialIcons';
 import Container, { IContainer } from '@/components/layout/container/Container';
 import { ISanityHero } from '@/lib/sanity/types/hero';
-import { MapPin } from 'lucide-react';
 
 export interface IHero extends IContainer {
   data: ISanityHero;
@@ -39,10 +37,10 @@ const Hero: React.FC<IHero> = ({ data, className, ...headerProps }) => {
             <Typography>{data.intro}</Typography>
           </div>
           <div className="flex flex-col gap-2">
-            <div className="flex gap-2">
+            {/* <div className="flex gap-2">
               <MapPin className="stroke-gray-600" />
-              {/* <Typography>Enugu, Nigeria</Typography> */}
-            </div>
+              <Typography>Enugu, Nigeria</Typography>
+            </div> */}
 
             <div className="flex items-center gap-2">
               <div className="flex h-6 w-6 items-center justify-center">
@@ -54,7 +52,7 @@ const Hero: React.FC<IHero> = ({ data, className, ...headerProps }) => {
               <Typography>Available for new projects</Typography>
             </div>
           </div>
-          <SocialIcons />
+          {/* <SocialIcons /> */}
         </div>
       </div>
     </Container>

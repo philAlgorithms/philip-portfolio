@@ -47,9 +47,7 @@ const AboutSection: React.FC<IAboutSection> = ({
 
         {/* Content */}
         <div className="flex max-w-xl flex-col gap-6">
-          <Typography variant="h3">
-            Curious about me? Here you have it:
-          </Typography>
+          <Typography variant="h3">{data.heading}</Typography>
           {/* <Typography>
             I&apos;m a passionate,{' '}
             <Link
