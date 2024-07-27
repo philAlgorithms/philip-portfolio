@@ -2,10 +2,10 @@
 import Typography from '@/components/general/typography';
 import SanityImageWithFallback from '@/components/image/fallback/SanityImageWithfallback';
 import Container, { IContainer } from '@/components/layout/container/Container';
-import Link from '@/components/navigation/link';
-import { EXTERNAL_LINKS } from '@/lib/data';
+import { portabletextComponents } from '@/components/typography/PortableTextComponent';
 import Tag from '@/lib/data-display/tag';
 import { ISanityAbout } from '@/lib/sanity/types/about';
+import { PortableText } from 'next-sanity';
 
 export interface IAboutSection extends IContainer {
   data: ISanityAbout;
@@ -50,7 +50,7 @@ const AboutSection: React.FC<IAboutSection> = ({
           <Typography variant="h3">
             Curious about me? Here you have it:
           </Typography>
-          <Typography>
+          {/* <Typography>
             I&apos;m a passionate,{' '}
             <Link
               noCustomization
@@ -119,6 +119,13 @@ const AboutSection: React.FC<IAboutSection> = ({
           <Typography>
             One last thing, I&apos;m available for freelance work, so feel free
             to reach out and say hello! I promise I don&apos;t bite 😉
+          </Typography> */}
+          <Typography>
+            {' '}
+            <PortableText
+              value={data.body as any}
+              components={portabletextComponents}
+            />
           </Typography>
         </div>
       </div>

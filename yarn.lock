@@ -1751,7 +1751,7 @@
     schema-utils "^4.2.0"
     source-map "^0.7.3"
 
-"@portabletext/react@^3.0.18", "@portabletext/react@^3.1.0":
+"@portabletext/react@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@portabletext/react/-/react-3.1.0.tgz#95d08b67e74d380705726db6762321bf926796a6"
   integrity sha512-ZGHlvS+NvId9RSqnflN8xF2KVZgAgD399dK1GaycurnGNZGZYTd5nZmc8by1yL76Ar8n/dbVtouUDJIkO4Tupw==
