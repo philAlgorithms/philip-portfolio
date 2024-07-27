@@ -9,7 +9,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Chinendu Onyedikachi',
+  title: 'Chinwendu Onyedikachi',
   description: 'Work Portfolio',
 };
 

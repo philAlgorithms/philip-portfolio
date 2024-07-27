@@ -34,7 +34,7 @@ export interface IHeader extends React.ComponentPropsWithoutRef<'header'> {}
 
 const Logo = () => (
   <Typography variant="h3" className="font-bold">
-    {'<PHILIP />'}
+    {'<DEEKA />'}
   </Typography>
 );
 const Header: React.FC<IHeader> = ({ className, children, ...headerProps }) => {
