@@ -12,10 +12,12 @@ export default class ProjectService {
       description,
       slug,
       mainImage,
-      "skills": *[_type == "skill" && references(^.id)] {
+      skills[]->{
         _id,
-        title,
-        description  
+        name,
+        icon,
+        darkModeIcon,
+        link
       },
       startedAt,
       endedAt,
@@ -40,10 +42,12 @@ export default class ProjectService {
       description,
       slug,
       mainImage,
-      "skills": *[_type == "skill" && references(^.id)] {
+      skills[]->{
         _id,
-        title,
-        description  
+        name,
+        icon,
+        darkModeIcon,
+        link
       },
       startedAt,
       endedAt,
@@ -65,10 +69,12 @@ export default class ProjectService {
       description,
       slug,
       mainImage,
-      "skills": *[_type == "skill" && references(^.id)] {
+      skills[]->{
         _id,
-        title,
-        description  
+        name,
+        icon,
+        darkModeIcon,
+        link
       },
       startedAt,
       endedAt,
@@ -94,10 +100,12 @@ export default class ProjectService {
       description,
       slug,
       mainImage,
-      "skills": *[_type == "skill" && references(^.id)] {
+      skills[]->{
         _id,
-        title,
-        description  
+        name,
+        icon,
+        darkModeIcon,
+        link
       },
       startedAt,
       endedAt,
