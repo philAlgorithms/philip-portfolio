@@ -12,7 +12,7 @@ import {
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Chinwendu Onyedikachi - Portfolio',
+  title: 'Philip Nwokedi - Portfolio',
   // description: '',
   robots: {
     googleBot: 'noindex;nofollow',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
       url: 'https://x.com/philip_nwookedi',
     },
   ],
-  keywords: ['Chinwendu Onyedikachi', ''],
+  keywords: ['Philip Nwokedi', ''],
   creator: 'Philip Nwokedi',
 };
 
