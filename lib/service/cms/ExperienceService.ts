@@ -9,6 +9,7 @@ export default class ExperienceService {
     const query = `*[_type=="experience"][${start}...${finish}] {
       _id,
       title,
+      company,
       logo,
       darkModeLogo,
       startedAt,
@@ -28,6 +29,7 @@ export default class ExperienceService {
     const query = `*[_type=="experience"][${start}...${finish}] {
       _id,
       title,
+      company,
       logo,
       darkModeLogo,
       startedAt,
@@ -48,6 +50,7 @@ export default class ExperienceService {
     const query = `*[_type=="experience" && slug.current=="${slug}"][0] {
       _id,
       title,
+      company,
       logo,
       darkModeLogo,
       startedAt,
@@ -66,6 +69,7 @@ export default class ExperienceService {
     const query = `*[_type=="experience" && _id=="${id}"][0] {
       _id,
       title,
+      company,
       logo,
       darkModeLogo,
       startedAt,

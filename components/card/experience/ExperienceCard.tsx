@@ -17,8 +17,16 @@ const ExperienceCard: React.FC<IExperienceCard> = ({
   ...divProps
 }) => {
   console.log(experience);
-  const { title, activities, link, logo, darkModeLogo, startedAt, endedAt } =
-    experience;
+  const {
+    title,
+    company,
+    activities,
+    link,
+    logo,
+    darkModeLogo,
+    startedAt,
+    endedAt,
+  } = experience;
   const [mounted, setMounted] = useState(false);
   const { theme } = useTheme();
 
@@ -44,14 +52,22 @@ const ExperienceCard: React.FC<IExperienceCard> = ({
             image={theme === 'dark' ? darkModeLogo || logo : logo}
             cover={false}
             alt={title}
-            className="transition-transform duration-300 md:hover:scale-110"
+            className="transition-transform duration-300 md:hover:scale-110 object-contain"
           />
         </a>
       </div>
       <div className="flex flex-col gap-4 max-md:order-3 md:w-2/4">
-        <Typography variant="subtitle" className="font-semibold text-gray-900">
-          {title}
-        </Typography>
+        <div className="">
+          <Typography
+            variant="subtitle"
+            className="font-semibold text-gray-900"
+          >
+            {title}
+          </Typography>
+          <Typography variant="body3" className="font-semibold text-gray-700">
+            {company}
+          </Typography>
+        </div>
         <ul className="flex list-disc flex-col gap-2 md:gap-1">
           {activities.map((sentence, index) => (
             <Typography component="li" key={index}>
